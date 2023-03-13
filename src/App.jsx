@@ -11,7 +11,7 @@ function App() {
 
     <MainLayout>
       <div >
-        <ItemListContainerComponent/>
+        <ItemListContainerComponent greeting="Bienvenido a Mi página Web!!!"/>
         {/* <ButtonComponent label="Botón Principal" clickEvent={() => console.log("Botón Principal")} />
         <ButtonComponent label="Botón Secundario" clickEvent={() => console.log("Botón Secundario")} />
         <ButtonComponent label="Botón Ternario" clickEvent={() => console.log("Botón Ternario")} />
