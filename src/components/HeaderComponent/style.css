@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 0px 4px 23px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 23px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 23px -4px rgba(0,0,0,0.75);
+}
+
+.logoYTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.logo {
+    width: 6rem;
+}
+
+.linkTitulo {
+    text-decoration: none;
+}
+
+.tituloTiendaDeComputadora {
+    /* background-color: aqua; */
+    padding-right: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}

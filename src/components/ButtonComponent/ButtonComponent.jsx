@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./style.css";
 
 export const ButtonComponent = ({clickEvent, label = "Botón Por Defecto"}) => {
   return (
