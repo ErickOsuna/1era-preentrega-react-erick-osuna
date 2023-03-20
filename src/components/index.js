@@ -5,4 +5,3 @@ export * from "./CartWidgetComponent/CartWidgetComponent";
 export * from "./ItemListContainerComponent/ItemListContainerComponent";
 export * from "./FooterComponent/FooterComponent";
 export * from "./ProductCardComponent/ProductCardComponent";
-export * from "./HeroComponent/HeroComponent";

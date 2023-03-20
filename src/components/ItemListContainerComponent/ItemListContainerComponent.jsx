@@ -9,6 +9,26 @@ export const ItemListContainerComponent = (props) => {
     <div className='itemListContainer'>
         <p>{props.greeting}</p>
         <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
+        <ProductCardComponent/>
     </div>
   )
 }
