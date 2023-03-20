@@ -1,17 +1,18 @@
 .cartWidgetContainer{
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     margin-right: 1rem;
 }
 
 .cartIcon{
-    /* background-color: red; */
-    width: 2.2rem;
+    width: 1.6rem;
 }
 
 .counter{
-    /* background-color: red; */
+    color: rgb(78, 78, 78);
+    font-weight: 500;
     font-size: 1rem;
     padding: 1.5rem 1rem 0 0.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
 }

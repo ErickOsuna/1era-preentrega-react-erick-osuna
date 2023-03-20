@@ -9,7 +9,7 @@ export const HeaderComponent = () => {
     <header className='header'>
       <div className='logoYTitulo'>
         <a href='#'><img src={logo} alt="Logo" className='logo' /></a>
-        <a href='#' className='linkTitulo'><h2 className='tituloTiendaDeComputadora'>VGA<br/>Store</h2></a>
+        <a href='#' className='linkTitulo'><h2 className='tituloTiendaDeComputadora'>VGA Store</h2></a>
       </div>
       <NavBarComponent />
       <CartWidgetComponent />

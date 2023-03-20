@@ -15,15 +15,18 @@
 }
 
 .logo {
-    width: 6rem;
+    width: 3rem;
 }
 
 .linkTitulo {
     text-decoration: none;
+    margin-left: 0.8rem;
 }
 
 .tituloTiendaDeComputadora {
-    /* background-color: aqua; */
+    margin-top: 0.8rem;
+    color: rgb(78, 78, 78);
+    font-weight: 500;
     padding-right: 1rem;
     font-size: 1rem;
     text-transform: uppercase;

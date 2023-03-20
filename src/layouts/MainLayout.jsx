@@ -7,8 +7,12 @@ export const MainLayout = ({ children }) => {
     const styles = {
         backgroundColor: "white",
         color: "black",
-        fontSize: "2rem"
+        fontSize: "2rem",
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh"
     }
+    
     return (
         <div style={styles}>
             <HeaderComponent/>

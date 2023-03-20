@@ -9,6 +9,9 @@
 }
 
 .navBar li{
-    padding: 0.8rem;
+    color: rgb(78, 78, 78);
+    font-weight: 500;
+    padding: 0.7rem;
     font-size: 1rem;
+    margin-bottom: -1rem;
 }
