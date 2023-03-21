@@ -12,23 +12,6 @@ export const ItemListContainerComponent = (props) => {
         <ProductCardComponent/>
         <ProductCardComponent/>
         <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
-        <ProductCardComponent/>
     </div>
   )
 }
