@@ -6,7 +6,7 @@ export const CartWidgetComponent = () => {
   return (
     <div>
       <div className='cartWidgetContainer'>
-        <a href='#'><img src={carrito} alt="cartWidget" className='cartIcon'/></a>
+        <a href='/cart-widget'><img src={carrito} alt="cartWidget" className='cartIcon'/></a>
         <p className='counter'>5</p>
       </div>
     </div>

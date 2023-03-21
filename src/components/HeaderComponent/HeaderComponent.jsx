@@ -8,8 +8,8 @@ export const HeaderComponent = () => {
   return (
     <header className='header'>
       <div className='logoYTitulo'>
-        <a href='#'><img src={logo} alt="Logo" className='logo' /></a>
-        <a href='#' className='linkTitulo'><h2 className='tituloTiendaDeComputadora'>VGA Store</h2></a>
+        <a href='/'><img src={logo} alt="Logo" className='logo' /></a>
+        <a href='/' className='linkTitulo'><h2 className='tituloTiendaDeComputadora'>VGA Store</h2></a>
       </div>
       <NavBarComponent />
       <CartWidgetComponent />

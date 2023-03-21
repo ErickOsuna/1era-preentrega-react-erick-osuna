@@ -5,10 +5,10 @@ export const NavBarComponent = () => {
   return (
     <div>
       <ul className='navBar'>
-        <a href='#'><li> Productos </li></a>
-        <a href='#'><li> Arma tu PC </li></a>
-        <a href='#'><li> Contacto </li></a>
-        <a href='#'><li> Inicia Sesión </li></a>
+        <a href='/productos'><li> Productos </li></a>
+        <a href='/arma-tu-pc'><li> Arma tu PC </li></a>
+        <a href='/contacto'><li> Contacto </li></a>
+        <a href='/inicia-sesion'><li> Inicia Sesión </li></a>
       </ul>
     </div>
   )
