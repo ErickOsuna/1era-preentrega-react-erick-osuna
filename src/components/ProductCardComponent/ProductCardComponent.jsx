@@ -24,9 +24,9 @@ export const ProductCardComponent = () => {
         {
           data.map((e)=>
           <div className="productCard" key={e.id}>
-            <img src={e.imagen} alt="Aquí debe mostrar la Foto" className='productImage'/>
+            <img src={e.imagen} alt="" className='productImage'/>
             <div className='productInfoName'>{e.titulo}</div>
-            <div className='productInfoPrice'>{e.precio}</div>
+            <div className='productInfoPrice'>ARS $ {e.precio}</div>
             <ButtonComponent label='Agregar'/>
           </div>
           )
