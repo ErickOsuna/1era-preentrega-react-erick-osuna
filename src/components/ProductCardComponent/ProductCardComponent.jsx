@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import "./style.css";
-import { ButtonComponent} from "../ButtonComponent/ButtonComponent";
+import { ButtonComponent } from "../ButtonComponent/ButtonComponent";
 
 export const ProductCardComponent = () => {
 
@@ -13,24 +13,26 @@ export const ProductCardComponent = () => {
       .then(json => setData(json))
   }
 
-  useEffect ( () => {
+  useEffect(() => {
     traerProductos()
     console.log(data);
   }, []);
 
 
   return (
-      <>
-        {
-          data.map((e)=>
+    <>
+      {
+        data.map((e) =>
           <div className="productCard" key={e.id}>
-            <img src={e.imagen} alt="" className='productImage'/>
-            <div className='productInfoName'>{e.titulo}</div>
-            <div className='productInfoPrice'>ARS $ {e.precio}</div>
-            <ButtonComponent label='Agregar'/>
+            <img src={e.imagen} alt="" className='productImage' />
+            <div className='productCardInfo'>
+              <div className='productInfoName'>{e.titulo}</div>
+              <div className='productInfoPrice'>ARS $ {e.precio}</div>
+              <ButtonComponent label='Agregar' />
+            </div>
           </div>
-          )
-        }
-      </>
+        )
+      }
+    </>
   )
 }

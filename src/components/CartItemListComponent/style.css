@@ -6,7 +6,8 @@
     padding: 3rem;
     border-radius: 2rem;
     background-color: var(--clr-white);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1rem;
+}
+
+.cartProduct {
+    background-color: green;
 }
