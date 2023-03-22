@@ -9,14 +9,16 @@
 .productImage {
     max-width: 100%;
     border-radius: 1rem;
+    padding: 1.5rem;
 }
 
 .productInfoName {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     margin: 2rem 0.5rem 0 0.5rem;
     padding: 0 0.5rem;
     color: var(--clr-main);
+    line-height: 1.7rem;
 }
 
 .productInfoPrice {
