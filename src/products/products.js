@@ -1,6 +1,6 @@
 // PRODUCTOS
 
-let products = [
+export const PRODUCTS = [
     // NOTEBOOKS
     {
         id: "notebook-01",
@@ -1204,6 +1204,6 @@ let products = [
         precio: 230.800,
         url: "https://compragamer.com/producto/Monitor_Gamer_BENQ_Zowie_24_5_XL2546_240Hz_13772"
     },
+    // 107 Productos en total...
 ]
 
-// 107 Productos en total...

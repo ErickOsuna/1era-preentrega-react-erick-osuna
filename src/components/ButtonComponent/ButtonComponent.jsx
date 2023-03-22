@@ -3,6 +3,6 @@ import "./style.css";
 
 export const ButtonComponent = ({clickEvent, label = "Botón Por Defecto"}) => {
   return (
-    <button onClick={clickEvent}>{label}</button>
+    <button onClick={clickEvent} className='buttonComponent'>{label}</button>
   )
 }

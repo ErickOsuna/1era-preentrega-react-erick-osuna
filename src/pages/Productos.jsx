@@ -1,10 +1,14 @@
 import React from 'react'
-import { ItemListContainerComponent } from '../components'
+import { ItemListContainerComponent, ProductCardComponent } from '../components'
 
 export const Productos = () => {
   return (
     <div>
-      <ItemListContainerComponent/>
+      <ItemListContainerComponent>
+
+        <ProductCardComponent/>
+
+      </ItemListContainerComponent>
     </div>
   )
 }

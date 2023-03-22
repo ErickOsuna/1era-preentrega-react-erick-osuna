@@ -12,6 +12,7 @@
   --clr-main: rgb(78, 78, 78);
   --clr-white: rgb(255,255,255);
   --clr-grey: rgb(173, 173, 173);
+  --clr-gradient: linear-gradient(to right, rgba(4,232,155,0.5),rgba(4,213,183,0.5),rgba(4,177,230,0.5));
 }
 
 body {
@@ -27,4 +28,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+  background: var(--clr-gradient);
 }

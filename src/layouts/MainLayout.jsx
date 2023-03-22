@@ -14,7 +14,7 @@ export const MainLayout = ({ children }) => {
     }
     
     return (
-        <div style={styles}>
+        <div style={styles} className='main'>
             <HeaderComponent/>
             {children}
             <FooterComponent/>
