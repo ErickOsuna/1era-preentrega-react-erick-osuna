@@ -27,7 +27,7 @@ export const ProductCardComponent = () => {
             <img src={e.imagen} alt="Aquí debe mostrar la Foto" className='productImage'/>
             <div className='productInfoName'>{e.titulo}</div>
             <div className='productInfoPrice'>{e.precio}</div>
-            <ButtonComponent/>
+            <ButtonComponent label='Agregar'/>
           </div>
           )
         }
