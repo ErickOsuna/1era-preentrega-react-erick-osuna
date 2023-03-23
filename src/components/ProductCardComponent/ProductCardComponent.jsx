@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import "./style.css";
 import { ButtonComponent } from "../ButtonComponent/ButtonComponent";
+import { useNavigate } from "react-router-dom";
 
 export const ProductCardComponent = () => {
 
@@ -18,6 +19,13 @@ export const ProductCardComponent = () => {
     console.log(data);
   }, []);
 
+  // const navigate = useNavigate ();
+
+  // const handleNavigateProduct = () => {
+  //   navigate(`/products/${PRODUCTS.id}`)
+  // }
+
+
 
   return (
     <>
@@ -30,6 +38,7 @@ export const ProductCardComponent = () => {
               <div className='productInfoPrice'>ARS $ {e.precio}</div>
               <ButtonComponent label='Agregar' />
             </div>
+            {/* <button onClick={handleNavigateProduct}>Ir a Detalles</button> */}
           </div>
         )
       }
