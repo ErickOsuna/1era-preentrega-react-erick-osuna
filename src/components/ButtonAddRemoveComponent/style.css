@@ -1,0 +1,29 @@
+.buttonAddRemove {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.buttonAdd, .buttonRemove {
+    background-color: var(--clr-grey);
+    padding: 0.2rem 2rem;
+    font-weight: 600;
+
+}
+
+.buttonAdd {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+
+.buttonRemove {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

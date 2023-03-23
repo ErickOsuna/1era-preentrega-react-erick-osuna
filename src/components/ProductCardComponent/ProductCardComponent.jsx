@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import "./style.css";
 import { ButtonComponent } from "../ButtonComponent/ButtonComponent";
 import { useNavigate } from "react-router-dom";
+import { ButtonAddRemoveComponent } from '../ButtonAddRemoveComponent/ButtonAddRemoveComponent';
 
 export const ProductCardComponent = () => {
 
@@ -36,7 +37,8 @@ export const ProductCardComponent = () => {
             <div className='productCardInfo'>
               <div className='productInfoName'>{e.titulo}</div>
               <div className='productInfoPrice'>ARS $ {e.precio}</div>
-              <ButtonComponent label='Agregar' />
+              <ButtonAddRemoveComponent />
+              <ButtonComponent label='Añadir al Carrito' />
             </div>
             {/* <button onClick={handleNavigateProduct}>Ir a Detalles</button> */}
           </div>
