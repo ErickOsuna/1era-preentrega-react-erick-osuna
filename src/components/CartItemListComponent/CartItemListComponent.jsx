@@ -7,41 +7,41 @@ export const CartItemListComponent = () => {
   return (
     <div className='cartItemList'>
       <p className='cartEmpty'>Tu carrito está vacío.</p>
-      <div className='cartProducts'>
+      <div className='cartProducts disabled'>
         <div className="cartProduct">
-          <img src={almacenamiento01} alt="" />
+          <img src={almacenamiento01} alt="" className='cartProductImage'/>
           <div className="cartProducttitle">
-            <p>Título</p>
-            <h3>Almacenamiento 01</h3>
+            <p className='small'>Título</p>
+            <h3 className='textProduct'>Almacenamiento 01</h3>
           </div>
           <div className="cartProductQuantity">
-            <p>Cantidad</p>
-            <p>1</p>
+            <p className='small'>Cantidad</p>
+            <p className='textProduct'>1</p>
           </div>
           <div className="cartProductPrice">
-            <p>Precio</p>
-            <p>$ 1000</p>
+            <p className='small'>Precio</p>
+            <p className='textProduct'>$ 1000</p>
           </div>
           <div className="cartProductSubTotal">
-            <p>Subtotal</p>
-            <p>$ 1000</p>
+            <p className='small'>Subtotal</p>
+            <p className='textProduct'>$ 1000</p>
           </div>
-          <button className='cartProductRemove'></button>
-          <ButtonComponent label='Eliminar' className='cartProductRemove'/>
+          <button className='cartProductRemove'>Eliminar</button>
         </div>
       </div>
-      <div className="cartActions">
+      <div className="cartActions disabled">
         <div className="cartLeftActions">
-          <ButtonComponent className='cartActionsRemove' label='Vaciar Carrito' />
+          <button className='cartActionsRemove'>Vaciar Carrito</button>
         </div>
         <div className="cartRightActions">
           <div className="cartActionsTotal">
             <p>Total:</p>
             <p id='total'>$ 3000</p>
           </div>
-          <ButtonComponent className='cartActionsBuy' label='Comprar Ahora' />
+          <button className='cartActionsBuy'>Comprar Ahora</button>
         </div>
       </div>
+      <p className='thanks disabled'>Muchas gracias por tu compra.</p>
     </div>
   )
 }
