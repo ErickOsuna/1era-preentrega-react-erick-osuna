@@ -8,6 +8,7 @@ export const MainRoutes = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/productos" element={<Productos />} />
+        <Route exact path="/productos/:categoryId" element={<Productos />} />
         <Route exact path="/arma-tu-pc" element={<ArmaTuPc />} />
         <Route exact path="/contacto" element={<Contacto />} />
         <Route exact path="/inicia-sesion" element={<IniciaSesion />} />

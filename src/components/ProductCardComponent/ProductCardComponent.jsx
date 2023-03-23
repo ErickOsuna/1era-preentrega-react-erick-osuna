@@ -2,12 +2,13 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import "./style.css";
 import { ButtonComponent } from "../ButtonComponent/ButtonComponent";
-import { useNavigate } from "react-router-dom";
 import { ButtonAddRemoveComponent } from '../ButtonAddRemoveComponent/ButtonAddRemoveComponent';
+import { useParams } from "react-router-dom";
 
 export const ProductCardComponent = () => {
 
   const [data, setData] = useState([]);
+  const { categoryId } = useParams();
 
   function traerProductos() {
     fetch("Productos.json")
@@ -16,19 +17,29 @@ export const ProductCardComponent = () => {
   }
 
   useEffect(() => {
-    traerProductos()
-    console.log(data);
+    traerProductos();
+
+    // setTimeout(()=>{
+
+    //   set
+
+    // })
+
   }, []);
 
-  // const navigate = useNavigate ();
+  useEffect(() => {
+    traerProductos();
+    if (categoryId !== undefined) {
+      console.log(data)
+    }
 
-  // const handleNavigateProduct = () => {
-  //   navigate(`/products/${PRODUCTS.id}`)
-  // }
+  }, [categoryId])
+  console.log(data)
+  // console.log(data[0].categoria.id);
 
-
-
-  return (
+  return data === undefined ? (
+    <div>Loading...</div>
+  ) : (
     <>
       {
         data.map((e) =>
@@ -40,7 +51,6 @@ export const ProductCardComponent = () => {
               <ButtonAddRemoveComponent />
               <ButtonComponent label='Añadir al Carrito' />
             </div>
-            {/* <button onClick={handleNavigateProduct}>Ir a Detalles</button> */}
           </div>
         )
       }

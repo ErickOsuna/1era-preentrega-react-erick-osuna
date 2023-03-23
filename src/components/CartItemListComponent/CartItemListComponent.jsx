@@ -1,13 +1,12 @@
 import React from 'react'
 import style from "./style.css"
-import { ButtonComponent } from "../ButtonComponent/ButtonComponent"
 import almacenamiento01 from "../../img/almacenamiento01.jpg"
 
 export const CartItemListComponent = () => {
   return (
     <div className='cartItemList'>
       <p className='cartEmpty'>Tu carrito está vacío.</p>
-      <div className='cartProducts disabled'>
+      <div className='cartProducts '>
         <div className="cartProduct">
           <img src={almacenamiento01} alt="" className='cartProductImage'/>
           <div className="cartProducttitle">
@@ -29,7 +28,7 @@ export const CartItemListComponent = () => {
           <button className='cartProductRemove'>Eliminar</button>
         </div>
       </div>
-      <div className="cartActions disabled">
+      <div className="cartActions ">
         <div className="cartLeftActions">
           <button className='cartActionsRemove'>Vaciar Carrito</button>
         </div>
@@ -41,7 +40,7 @@ export const CartItemListComponent = () => {
           <button className='cartActionsBuy'>Comprar Ahora</button>
         </div>
       </div>
-      <p className='thanks disabled'>Muchas gracias por tu compra.</p>
+      <p className='thanks '>Muchas gracias por tu compra.</p>
     </div>
   )
 }
