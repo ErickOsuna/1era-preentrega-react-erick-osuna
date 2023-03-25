@@ -1,20 +1,22 @@
 import React from 'react'
 import style from "./style.css"
+import { Link } from 'react-router-dom'
+
 
 export const CategoryNavBarComponent = () => {
   return (
     <div className='categoryNavBar'>
         <ul className='categoryNavBarList'>
-            <a href="#"><li>Todos los Productos</li></a>
-            <a href="/productos/notebooks"><li>Notebooks</li></a>
-            <a href="#"><li>Procesadores</li></a>
-            <a href="#"><li>Mothers</li></a>
-            <a href="#"><li>Placas de Video</li></a>
-            <a href="#"><li>Memorias RAM</li></a>
-            <a href="#"><li>Almacenamiento</li></a>
-            <a href="#"><li>Fuentes</li></a>
-            <a href="#"><li>Gabinetes</li></a>
-            <a href="#"><li>Monitores</li></a>
+            <Link to={"/category"}><li>Todos los Productos</li></Link>
+            <Link to={"/category/notebooks"}><li>Notebooks</li></Link>
+            <Link to={"/category/procesadores"}><li>Procesadores</li></Link>
+            <Link to={"/category/mothers"}><li>Mothers</li></Link>
+            <Link to={"/category/placas-video"}><li>Placas de Video</li></Link>
+            <Link to={"/category/memorias-ram"}><li>Memorias RAM</li></Link>
+            <Link to={"/category/almacenamiento"}><li>Almacenamiento</li></Link>
+            <Link to={"/category/fuentes"}><li>Fuentes</li></Link>
+            <Link to={"/category/gabinetes"}><li>Gabinetes</li></Link>
+            <Link to={"/category/monitores"}><li>Monitores</li></Link>
         </ul>
     </div>
   )

@@ -1,10 +1,11 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
-import "./style.css";
-import { ButtonComponent } from "../ButtonComponent/ButtonComponent";
-import { ButtonAddRemoveComponent } from '../ButtonAddRemoveComponent/ButtonAddRemoveComponent';
+import style from "./style.css";
+import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
-export const ProductCardComponent = () => {
+export const ItemCategoryComponent = () => {
+
+  const { categoryId } = useParams();
 
   const [data, setData] = useState([]);
 
@@ -19,17 +20,20 @@ export const ProductCardComponent = () => {
 
   }, []);
 
+
+  const resultado = data.filter(e => e.categoria.id === categoryId);
+
+  console.log(resultado);
+
   return (
     <>
       {
-        data.map((e) =>
+        resultado.map((e) =>
           <div className="productCard" key={e.id}>
             <img src={e.imagen} alt="" className='productImage' />
             <div className='productCardInfo'>
               <div className='productInfoName'>{e.titulo}</div>
               <div className='productInfoPrice'>ARS $ {e.precio}</div>
-              <ButtonAddRemoveComponent />
-              <ButtonComponent label='Añadir al Carrito' />
             </div>
           </div>
         )
