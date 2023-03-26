@@ -9,4 +9,4 @@ export * from "./CategoryNavBarComponent/CategoryNavBarComponent";
 export * from "./CartItemListComponent/CartItemListComponent";
 export * from "./ButtonAddRemoveComponent/ButtonAddRemoveComponent";
 export * from "./ItemCategoryComponent/ItemCategoryComponent";
-export * from "./ItemDetailComponent/ItemDetailComponent";
+export * from "./ItemDetailsComponent/ItemDetailsComponent";

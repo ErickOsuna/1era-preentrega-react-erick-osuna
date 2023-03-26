@@ -24,10 +24,11 @@ export const ProductCardComponent = () => {
       {
         data.map((e) =>
           <div className="productCard" key={e.id}>
-            <img src={e.imagen} alt="" className='productImage' />
+            <a href={e.id}><img src={e.imagen} alt="" className='productImage' /></a>
             <div className='productCardInfo'>
               <div className='productInfoName'>{e.titulo}</div>
               <div className='productInfoPrice'>ARS $ {e.precio}</div>
+              <a className='details' href={e.id}>Detalle del Producto</a>
               <ButtonAddRemoveComponent />
               <ButtonComponent label='Añadir al Carrito' />
             </div>
