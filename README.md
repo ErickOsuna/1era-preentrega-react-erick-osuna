@@ -22,11 +22,12 @@ Contiene 6 páginas:
 Ejecutar: npm install.
 
 
-![React-App-Google-Chrome-2023-03-26-16-42-32](https://user-images.githubusercontent.com/112889127/231020522-b0c9c658-0436-4d82-9fbc-1aa05f40dfc0.gif)
-
 ## Para Iniciar en Local
 
 Ejecutar: npm start
 
 
-## 
+## Vista Previa de la Aplicación
+
+
+![React-App-Google-Chrome-2023-03-26-16-42-32](https://user-images.githubusercontent.com/112889127/231020522-b0c9c658-0436-4d82-9fbc-1aa05f40dfc0.gif).
